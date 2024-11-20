@@ -92,7 +92,7 @@ export default function Auth() {
     try {
       const result = await signIn("email", {
         email,
-        callbackUrl: "https://localhost:3000/senior-sense-demo",
+        callbackUrl: "https://senior-sense.vercel.app/senior-sense-demo",
       });
       console.log(result);
       if (result?.error) {
