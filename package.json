@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "node server.js",
+    "prisma:generate": "prisma generate",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "lint": "next lint",
-    "prisma:generate": "prisma generate"
+    "lint": "next lint"
   },
   "dependencies": {
     "@auth/core": "^0.35.0",
