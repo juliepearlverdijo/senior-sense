@@ -65,7 +65,7 @@ export default function Auth() {
     setSignInErrorMessage("");
     try {
       const result = await signIn("cognito", {
-        callbackUrl: "https://localhost:3000/senior-sense-demo",
+        callbackUrl: "https://senior-sense.vercel.app/senior-sense-demo",
       });
       console.log(result);
       if (result?.error) {
