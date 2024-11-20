@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node server.js",
     "prisma:generate": "prisma generate",
-    "build": "next build",
+    "build": "npm run prisma:generate && next build",
     "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
